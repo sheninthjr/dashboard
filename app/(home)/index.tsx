@@ -1,8 +1,8 @@
-import NavBar from "@/components/NavBar";
-import Sidebar from "@/components/SideBar";
-import { useNavigation } from "expo-router";
-import { useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import NavBar from '@/components/NavBar';
+import Sidebar from '@/components/SideBar';
+import { useNavigation } from 'expo-router';
+import { useState } from 'react';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Home() {
   const navigation = useNavigation();
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
   },
   Column: {
     flex: 1,
-    backgroundColor: "white",
-    borderColor: "blue",
+    backgroundColor: 'white',
+    borderColor: 'blue',
     borderWidth: 1,
     borderRadius: 2,
     height: 100,
@@ -58,6 +58,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   Text: {
-    color: "black",
+    color: 'black',
   },
 });

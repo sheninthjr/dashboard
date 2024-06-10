@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { Feather } from "@expo/vector-icons";
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 const NavBar = ({
   username,
   onSidebarToggle,
@@ -28,18 +28,18 @@ const NavBar = ({
 const styles = StyleSheet.create({
   navContainer: {
     paddingTop: 30,
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 15,
-    backgroundColor: "#f0f0f0",
+    backgroundColor: '#f0f0f0',
   },
   welcomeText: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: 16,
     marginLeft: 20,
   },
   toggleButton: {
-    backgroundColor: "transparent",
+    backgroundColor: 'transparent',
     padding: 0,
   },
 });

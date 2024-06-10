@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 import {
   View,
   Text,
   TouchableOpacity,
   StyleSheet,
   Animated,
-} from "react-native";
-import { Feather } from "@expo/vector-icons";
+} from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
 const Sidebar = ({ navigation, isOpen, onSidebarClose }: any) => {
   const translateX = new Animated.Value(isOpen ? 0 : -300);
@@ -34,21 +34,21 @@ const Sidebar = ({ navigation, isOpen, onSidebarClose }: any) => {
 
       <TouchableOpacity
         style={styles.sidebarItem}
-        onPress={() => navigation.navigate("Profile")}
+        onPress={() => navigation.navigate('Profile')}
       >
         <Feather name="user" size={24} color="black" />
         <Text style={styles.sidebarText}>Profile</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.sidebarItem}
-        onPress={() => navigation.navigate("Dashboard")}
+        onPress={() => navigation.navigate('Dashboard')}
       >
         <Feather name="home" size={24} color="black" />
         <Text style={styles.sidebarText}>Dashboard</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.sidebarItem}
-        onPress={() => navigation.navigate("Settings")}
+        onPress={() => navigation.navigate('Settings')}
       >
         <Feather name="settings" size={24} color="black" />
         <Text style={styles.sidebarText}>Settings</Text>
@@ -62,30 +62,30 @@ const Sidebar = ({ navigation, isOpen, onSidebarClose }: any) => {
 
 const styles = StyleSheet.create({
   sidebarContainer: {
-    position: "absolute",
+    position: 'absolute',
     top: 15,
     left: 0,
     bottom: 0,
     zIndex: 10,
     width: 300,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: '#f5f5f5',
     padding: 20,
-    justifyContent: "flex-start",
+    justifyContent: 'flex-start',
   },
   userInfo: {
     marginBottom: 20,
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
   },
   username: {
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   userEmail: {
-    color: "gray",
+    color: 'gray',
   },
   sidebarItem: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     marginBottom: 15,
   },
   sidebarText: {
@@ -93,11 +93,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   closeButton: {
-    marginTop: "auto",
-    alignSelf: "flex-start",
+    marginTop: 'auto',
+    alignSelf: 'flex-start',
   },
   closeButtonText: {
-    color: "red",
+    color: 'red',
     fontSize: 16,
   },
 });
